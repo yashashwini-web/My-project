@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eef2f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 850px;
+    min-height: 500px;
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+}
+
+.left-side {
+    width: 45%;
+    background: linear-gradient(135deg, #2563eb, #6d28d9);
+    color: white;
+    padding: 60px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-side h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.left-side p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.right-side {
+    width: 55%;
+    padding: 45px 40px;
+}
+
+.right-side h2 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #2563eb;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box span {
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    color: #2563eb;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0;
+    font-size: 12px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.remember input {
+    width: auto;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.register {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+#message, #regMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media(max-width: 700px) {
+    .container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .left-side {
+        padding: 35px 25px;
+    }
+
+    .right-side {
+        padding: 30px 25px;
+    }
+}
